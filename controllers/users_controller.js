@@ -1,6 +1,6 @@
 module.exports.profile = function(req, res){
     return res.render('profile', {
-        Profile: "Sam"
+        title: "Sam"
     });
 }
 
@@ -18,3 +18,12 @@ module.exports.signIn = function(req, res){
     })
 }
 
+//get signup data
+module.exports.create = function(req,res){
+    //todo
+}
+
+//get sigin data
+module.exports.createSession = function(req, res){
+    //todo
+}

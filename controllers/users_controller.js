@@ -1,29 +1,31 @@
-const User = require('../models/user')
+const User = require('../models/user');
+
 
 module.exports.profile = function(req, res){
     return res.render('user_profile', {
-        title: "User Profile"
-    });
+        title: 'User Profile'
+    })
 }
 
-//render sign up page
+
+// render the sign up page
 module.exports.signUp = function(req, res){
     return res.render('user_sign_up', {
-        title: "Convvey | Sign Up"
+        title: "Codeial | Sign Up"
     })
 }
 
-// render signin page
+
+// render the sign in page
 module.exports.signIn = function(req, res){
     return res.render('user_sign_in', {
-        title: 'Convvey | Sign In'
+        title: "Codeial | Sign In"
     })
 }
 
-//get signup data
+// get the sign up data
 module.exports.create = function(req, res){
     if (req.body.password != req.body.confirm_password){
-        console.log("recheck pass");
         return res.redirect('back');
     }
 
@@ -44,9 +46,7 @@ module.exports.create = function(req, res){
 }
 
 
-
-
-//get sigin data
+// sign in and create a session for the user
 module.exports.createSession = function(req, res){
-    //todo
+    return res.redirect('/');
 }

@@ -10,7 +10,14 @@
          type: mongoose.Schema.Types.ObjectId,
          ref: "User"
      
-    }
+    },
+    // including array of ids of all comments
+    comments: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'comment'
+        }
+    ]
 
 },{
     timestamps: true

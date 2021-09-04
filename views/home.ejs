@@ -1,16 +1,6 @@
-<html>
+<link rel="stylesheet" href="/css/home.css">
 
-<head>
-    <link rel="stylesheet" href="">
-    <title>
-        <%= title %>
-    </title>
-</head>
-
-<body>
-    <h1>Convvey <%= title %>
-    </h1>
-
+<div id="home-container">
     <section id="feed-posts">
         <h4>Posts</h4>
         <% if(locals.user) {%>
@@ -22,18 +12,27 @@
 
                 <div id="posts-list-container">
                     <ul>
-                            <% for(post of posts){ %>
+                        <% for(post of posts){ %>
 
                             <%- include('_post') -%>
 
-                            <% } %>
+                                <% } %>
 
-                            
+
 
 
                     </ul>
                 </div>
     </section>
-</body>
 
-</html>
+    <section id="user-friends">
+        <h4>Friends</h4>
+        <% for (u of all_users) { %>
+            <p>
+                <a href="/users/profile/<%= u.id %>"><%= u.name %> </a>
+            </p>
+        <% } %>
+
+    </section>
+</div>
+

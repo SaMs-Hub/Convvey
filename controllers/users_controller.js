@@ -63,7 +63,7 @@ module.exports.signUp = function(req, res){
 
 
     return res.render('user_sign_up', {
-        title: "Convvey | Sign Up"
+        title: "Codeial | Sign Up"
     })
 }
 
@@ -75,7 +75,7 @@ module.exports.signIn = function(req, res){
         return res.redirect('/users/profile');
     }
     return res.render('user_sign_in', {
-        title: "Convvey | Sign In"
+        title: "Codeial | Sign In"
     })
 }
 

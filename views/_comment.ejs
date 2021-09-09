@@ -1,4 +1,4 @@
-<li id="comment-<%= comment._id %>">
+<li id="comment-<%= comment._id %>" style="list-style: none;">
     <p>
         <% if (locals.user && locals.user.id == comment.user.id){ %>
         
@@ -19,7 +19,7 @@
                         <%= comment.likes.length %> &nbsp; <img class="pic" src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-facebook-logo-logos-pictures-17.jpg" alt="">  &nbsp; Likes
                 </a>
             <% }else{ %>
-                <%= comment.likes.length %> Likes
+                <%= comment.likes.length %> &nbsp; <img class="pic" src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-facebook-logo-logos-pictures-17.jpg" alt="">  &nbsp; Likes
             <% } %>
         </small>
 

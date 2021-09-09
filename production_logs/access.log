@@ -8,3 +8,16 @@
 [0mGET /users/sign-up [36m304[0m 15.562 ms - -[0m
 [0mGET / [32m200[0m 179.909 ms - 7773[0m
 [0mGET / [36m304[0m 103.207 ms - -[0m
+[0mGET / [36m304[0m 206.543 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 31.597 ms - -[0m
+[0mPOST /users/create-session [36m302[0m 47.690 ms - 46[0m
+[0mGET / [32m200[0m 112.650 ms - 10922[0m
+[0mGET / [32m200[0m 231.382 ms - 10652[0m
+[0mPOST /likes/toggle/?id=6138adc790927a0e5405d5c1&type=Post [32m200[0m 77.651 ms - 57[0m
+[0mGET /users/profile/6138a81a90927a0e5405d50d [32m200[0m 40.791 ms - 2362[0m
+[0mGET /users/profile/css/header.css [33m404[0m 51.318 ms - 167[0m
+[0mGET / [32m200[0m 88.391 ms - 10652[0m
+[0mGET / [32m200[0m 84.998 ms - 10654[0m
+[0mGET /css/header.css%3E [33m404[0m 58.092 ms - 156[0m
+[0mGET / [32m200[0m 86.247 ms - 10653[0m
+[0mGET /users/profile/6138a81a90927a0e5405d50d [32m200[0m 35.733 ms - 2363[0m

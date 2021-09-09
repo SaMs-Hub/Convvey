@@ -3,7 +3,7 @@
         <% if (locals.user && locals.user.id == comment.user.id){ %>
         
         <small>
-            <a class="delete-comment-button" href="/comments/destroy/<%= comment.id %>">X</a>
+            <a class="delete-comment-button" href="/comments/destroy/<%= comment.id %>"> https://image.flaticon.com/icons/png/128/216/216658.png </a>
         </small>
         <% } %>
         <%= comment.content %>
@@ -16,7 +16,7 @@
         <small>
             <% if (locals.user){ %>
                 <a class="toggle-like-button" data-likes="<%= comment.likes.length %>" href="/likes/toggle/?id=<%=comment._id%>&type=Comment">
-                        <%= comment.likes.length %> Likes
+                        <%= comment.likes.length %> &nbsp; <img class="pic" src="https://img-premium.flaticon.com/png/128/2058/premium/2058128.png?token=exp=1631186820~hmac=5b1384f5a9281256ed9d2e072a30c43e" alt="">  &nbsp; Likes
                 </a>
             <% }else{ %>
                 <%= comment.likes.length %> Likes

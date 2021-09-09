@@ -1,13 +1,15 @@
-<li id="post-<%= post._id %>">
-    <p>
+<link rel="stylesheet" href="/css/post.css">
+<li id="post-<%= post._id %>" >
+
+    <p class="posts-list">
         <% if (locals.user && locals.user.id == post.user.id){ %>
-        <small>
+        <small class="post-header" >
             <a class="delete-post-button"  href="/posts/destroy/<%= post.id %>">X</a>
         </small>
         <% } %>
         <%= post.content %>
         <br>
-        <small>
+        <small >
             <%= post.user.name %>
         </small>
 
@@ -16,11 +18,11 @@
             <!-- study about the data attribute -->
         <small>
             <% if (locals.user){ %>
-                <a class="toggle-like-button" data-likes="<%= post.likes.length %>" href="/likes/toggle/?id=<%=post._id%>&type=Post">
-                        <%= post.likes.length %> Likes
+                <a class="toggle-like-button post-like" data-likes="<%= post.likes.length %>" href="/likes/toggle/?id=<%=post._id%>&type=Post">
+                        <%= post.likes.length %> &nbsp; <img class="pic" src="https://img-premium.flaticon.com/png/128/2058/premium/2058128.png?token=exp=1631186820~hmac=5b1384f5a9281256ed9d2e072a30c43e" alt=""> &nbsp; Likes
                 </a>
             <% }else{ %>
-                <%= post.likes.length %> Likes
+                <%= post.likes.length %> &nbsp; <img class="pic" src="https://img-premium.flaticon.com/png/128/2058/premium/2058128.png?token=exp=1631186820~hmac=5b1384f5a9281256ed9d2e072a30c43e" alt=""> &nbsp; Likes
             <% } %>
         </small>
 
@@ -28,7 +30,7 @@
     <div class="post-comments">
         <% if (locals.user){ %>
             <!-- let's give an id to the new comment form, we'll also need to make the same changes in home_posts.js where we're adding a post to the page -->
-            <form id="post-<%= post._id %>-comments-form" action="/comments/create" method="POST">
+            <form id="post-<%= post._id %>-comments-form" class="post-comment-box" action="/comments/create" method="POST">
                 <input type="text" name="content" placeholder="Type Here to add comment..." required>
                 <input type="hidden" name="post" value="<%= post._id %>" >
                 <input type="submit" value="Add Comment">

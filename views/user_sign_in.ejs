@@ -1,13 +1,15 @@
-<h1>Sign In</h1>
+<link rel="stylesheet" href="/css/sign-in.css">
+<h1 class="login-signup-header ">Sign In</h1>
 
-<form action="/users/create-session" method="POST">
+<form action="/users/create-session" class="login-form"  method="POST">
 
-     <input type="email" name="email" placeholder="Email"  required> 
-     <input type="password" name="password" placeholder="Password"  required>
-    <input type="submit" value="Sign In">
+     <input class="field" type="email" name="email" placeholder="Email"  required> 
+     <input class="field" type="password" name="password" placeholder="Password"  required>
+    <input class="field-button" type="submit" value="Sign In">
 
 </form>
 
-<p>
-    <a href="/users/auth/google">Google Sign In/Sign Up</a>
+<p class="login-form">
+    <a href="/users/auth/google">
+        <img class="pic" src="https://img-premium.flaticon.com/png/128/720/premium/720255.png?token=exp=1631105460~hmac=1a288eb0372d70d09d6e437f5699b949" alt=""> </a>
 </p>

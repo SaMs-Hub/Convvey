@@ -16,6 +16,13 @@
     
 <%}else{%>    
     <!-- else show only the profile info -->
-    <p><%= profile_user.name %></p>
-    <p><%= profile_user.email %></p>
+    <div class="field">
+        <div class="field-label">Name</div>
+        <div class="field-value"><%= profile_user.name %> </div>
+      </div>
+
+      <div class="field">
+        <div class="field-label">Email</div>
+        <div class="field-value"><%= profile_user.email %></div>
+      </div>
 <%} %>

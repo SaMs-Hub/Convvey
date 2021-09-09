@@ -6,6 +6,8 @@
   justify-content: flex-start; }
   #layout-footer a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    padding-right: 8px; }
   #layout-footer .footer-nav ul {
-    list-style: none; }
+    list-style: none; 
+    display: inline-flex}

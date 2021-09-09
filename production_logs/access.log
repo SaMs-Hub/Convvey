@@ -1,0 +1,8 @@
+[0mGET / [32m200[0m 129.856 ms - 7773[0m
+[0mGET /favicon.ico [33m404[0m 19.073 ms - 150[0m
+[0mGET /users/sign-in [32m200[0m 22.197 ms - 2579[0m
+[0mGET /users/sign-up [32m200[0m 23.596 ms - 2751[0m
+[0mGET /users/sign-in [36m304[0m 16.349 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 19.683 ms - -[0m
+[0mGET /users/sign-in [36m304[0m 14.399 ms - -[0m
+[0mGET /users/sign-up [36m304[0m 15.562 ms - -[0m

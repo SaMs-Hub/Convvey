@@ -14,29 +14,34 @@
     	list-style: none;
 	    padding: 10px;
 	    height: 70%;
-	    background-color: white;
+	    background-color: #fff;
+		border-right: 1px solid #e5e5e5;
+  		border-left: 1px solid #e5e5e5;
+
 	    overflow: auto;
 
 	    .other-message{
 		    text-align: left;
-		    padding: 5px;
+		    padding: 8px;
 		    span{
 		    	display: inline-block;
 	    		padding: 15px;
-		    	background-color: #ffa0a0;
+		    	background-color: #e5e5e5;
+				border-radius: 5px;
 		    }
 		    
 	    }
 
 	    .self-message{
 		    text-align: right;
-		    padding: 5px;
+		    padding: 8px;
 		   
 		    span{
 		    	 
 	    		display: inline-block;
 	    		padding: 15px;
-    			background-color: #a0dcff;
+		    	background-color: #b0ffb3;
+				border-radius: 5px;
 		    }
 		   
 	    }
@@ -51,6 +56,8 @@
 		    #chat-message-input{
 	    	    height: 50%;
     			width: 70%;
+				outline: none;
+				padding-left: 5px;
 		    }
 
 		    #send-message{
@@ -59,7 +66,7 @@
 			    font-size: 25px;
 			    color: white;
 			    border: none;
-			    background: #58d258;
+			    background: #ef7917;
 		    }
 	    }
 }

@@ -1,11 +1,10 @@
 #layout-header{
     nav{
         display: flex;
+        background: #6200ee;
+        padding: 10px 20px;
+        align-items: center;
         justify-content: space-between;
-        padding: 0 10px;
-        background: #2196f3;
-        color: white;
-        box-shadow: 1px 1px 1px 1px lightgrey;
 
         .mini-logo{
             p{
@@ -13,6 +12,10 @@
                 font-size: 1.4rem;
                 font-weight: bold;
             }
+        }
+
+        .title{
+            font-size: 2rem;
         }
 
         .auth-links{
@@ -23,13 +26,17 @@
 
                 li{
                     margin-right: 10px;
+                    padding: 0 4px;
                     
+                }
+                li:hover{
+                    text-decoration: underline;
                 }
             }
         }
 
         a{
-            color: white;
+            color: #fff;
             text-decoration: none;
         }
 

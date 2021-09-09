@@ -3,6 +3,7 @@
     a{
         color: white;
         text-decoration: none;
+        padding-right: 8px;
     }
 
     background: grey;
@@ -13,6 +14,7 @@
     .footer-nav{
         ul{
             list-style: none;
+            display: inline-flex;
         }
     }
 }

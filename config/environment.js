@@ -25,11 +25,11 @@ const development = {
         secure: false,
         auth: {
             user: 'syedsamer456@gmail.com',
-            pass: 'qwertyqw12'
+            pass: '#12'
         }
     },
-    google_client_id: "956624848290-t03qcidt94jq9l11fjjr041ql1be08k6.apps.googleusercontent.com",
-    google_client_secret: "YY6_ypvaIhsdk6MHS7YNn5ot",
+    google_client_id: "###290-t03qcidt94jq9l11fjjr041ql1be08k6.apps.googleusercontent.com",
+    google_client_secret: "###ypvaIhsdk6MHS7YNn5ot",
     google_call_back_url: "http://localhost:8000/users/auth/google/callback",
     jwt_secret: 'convvey',
     morgan: {

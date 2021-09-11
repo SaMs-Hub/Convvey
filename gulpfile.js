@@ -29,19 +29,19 @@ gulp.task('css', function(done){
 });
 
 
-gulp.task('js', function(done){
-    console.log('minifying js...');
-     gulp.src('./assets/**/*.js')
-    .pipe(uglify())
-    .pipe(rev())
-    .pipe(gulp.dest('./public/assets'))
-    .pipe(rev.manifest({
-        cwd: 'public',
-        merge: true
-    }))
-    .pipe(gulp.dest('./public/assets'));
-    done()
-});
+// gulp.task('js', function(done){
+//     console.log('minifying js...');
+//      gulp.src('./assets/**/*.js')
+//     .pipe(uglify())
+//     .pipe(rev())
+//     .pipe(gulp.dest('./public/assets'))
+//     .pipe(rev.manifest({
+//         cwd: 'public',
+//         merge: true
+//     }))
+//     .pipe(gulp.dest('./public/assets'));
+//     done()
+// });
 
 
 // gulp.task('images', function(done){
